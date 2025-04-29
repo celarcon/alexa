@@ -1,0 +1,21 @@
+POST http://localhost:8080 HTTP/1.1
+content-type: application/json
+
+{
+  "version": "1.0",
+  "session": {
+    "new": true,
+    "sessionId": "SessionId.1234567890",
+    "application": {
+      "applicationId": "amzn1.ask.skill.xxxx"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.xxx"
+    }
+  },
+  "request": {
+    "type": "LaunchRequest",
+    "requestId": "EdwRequestId.a0f6c4fd-8a47-4170-bfbf-e0ed72e16898",
+    "timestamp": "2016-10-27T18:30:10Z"
+  }
+}

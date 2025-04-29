@@ -1,27 +1,28 @@
 {
 	"name": "mi-skill-alexa",
 	"version": "1.0.0",
-	"type": "module",
 	"main": "dist/index.js",
 	"scripts": {
-		"start": "node dist/index.js",
 		"build": "tsc",
-		"dev": "ts-node-esm src/index.ts"
+		"start:prod": "node dist/index.js",
+		"start:dev": "nodemon"
 	},
 	"dependencies": {
 		"ask-sdk-core": "^2.14.0",
 		"ask-sdk-express-adapter": "^2.14.0",
+		"dotenv": "^16.5.0",
 		"express": "^5.1.0"
 	},
 	"devDependencies": {
+		"@eslint/js": "^9.25.1",
 		"@types/express": "5.0.1",
-		"ts-node": "^10.9.2",
-		"typescript": "^5.8.3",
-		"typescript-eslint": "^8.31.1",
 		"eslint": "^9.25.1",
 		"eslint-config-prettier": "^10.1.2",
 		"eslint-plugin-prettier": "^5.2.6",
-		"@eslint/js": "^9.25.1",
-		"globals": "^16.0.0"
+		"globals": "^16.0.0",
+		"nodemon": "^3.1.10",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.31.1"
 	}
 }

@@ -20,15 +20,8 @@
 		"resolveJsonModule": true,
 		"esModuleInterop": true,
 		"allowJs": true,
-		"types": ["jest", "@types/jest", "node"]
+		"types": ["node"]
 	},
-	"include": [
-		"src/**/*.ts",
-		"src/**/*.js",
-		"src/**/*.json",
-		"src/**/*.hbs",
-		"test/**/*.ts",
-		"global.d.ts"
-	],
+	"include": ["src/**/*.ts", "src/**/*.js", "src/**/*.json", "src/**/*.hbs"],
 	"exclude": ["../node_modules"]
 }

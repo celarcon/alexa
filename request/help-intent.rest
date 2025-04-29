@@ -1,0 +1,26 @@
+
+POST http://localhost:8080 HTTP/1.1
+content-type: application/json
+
+{
+  "version": "1.0",
+  "session": {
+    "new": false,
+    "sessionId": "SessionId.abcdefg12345",
+    "application": {
+      "applicationId": "amzn1.ask.skill.xxxx"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.xxx"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.abcdefg-1234-5678-9101",
+    "timestamp": "2025-04-29T19:00:00Z",
+    "locale": "es-ES",
+    "intent": {
+      "name": "AMAZON.HelpIntent"
+    }
+  }
+}
